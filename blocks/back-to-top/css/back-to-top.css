@@ -1,0 +1,45 @@
+.back-to-top {
+    position: fixed;
+    display: block;
+    width: 35px;
+    height: 35px;
+    right: 50px;
+    bottom: 50px;
+
+    transition: opacity 0.5s ease;
+    opacity: 1;
+
+    cursor: pointer;
+
+    z-index: 100;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.back-to-top path {
+    fill: var(--black, #000000);
+}
+
+.back-to-top:hover path {
+    fill: var(--gray-dark, #3C3C3C);
+}
+
+.back-to-top__icon {
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .back-to-top {
+        right: 35px;
+        bottom: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
