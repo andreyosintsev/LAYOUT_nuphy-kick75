@@ -133,6 +133,12 @@ body {
     }
 }
 
+@media (max-width: 1200px) {
+    .section-title-page_light {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 1080px) {
     .wrapper-1080 {
         padding-left: 0;
@@ -144,6 +150,14 @@ body {
     .section {
         margin-top: 140px;
     }
+
+    .section-title-page_light {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 62px;
+        font-weight: var(--text-weight-bold, 700);
+
+        text-align: left;
+    }
 }
 
 @media (max-width: 768px) {
@@ -154,6 +168,13 @@ body {
 
     .section-title-page {
         margin-bottom: 15px;
+    }
+
+    .section-title-page_light {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: var(--text-weight-main, 400);
+
+        text-align: center;
     }
 
     .products {

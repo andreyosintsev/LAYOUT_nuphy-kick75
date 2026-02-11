@@ -1,3 +1,10 @@
+/*Roboto Condensed Normal*/
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    src: url("../../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+    font-display: swap;
+}
 /*Roboto Condensed SemiBold*/
 @font-face {
     font-family: 'Roboto Condensed';
