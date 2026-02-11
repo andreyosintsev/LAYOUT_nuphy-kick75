@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+body {
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: var(--text-size-main, 14px);
+    font-weight: var(--text-weight-main, 400);
+
+    line-height: var(--text-line-height-main, 18px);
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 72px;
+}
+
+.wrapper {
+    width: 100%;
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.wrapper_white {
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.wrapper_gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+
+    background-color: var(--background-color-gray, #F5F5F5);
+}
+
+.wrapper_gray .wrapper-1600 {
+    margin: 0;
+}
+
+.wrapper-1600 {
+    width: 100%;
+    max-width: var(--wrapper-width, 1600px);
+    padding: 0;
+    margin: 0 auto 60px;
+
+    color: var(--text-color-main, #000000);
+
+    text-align: left;
+}
+
+.wrapper-1080 {
+    width: 100%;
+    max-width: var(--content-width, 1080px);
+    margin: 0 auto 100px;
+
+    color: var(--text-color-main, #000000);
+
+    text-align: left;
+}
+
+.single-slider {
+    margin: 0 auto 100px;
+}
+
+.tiles-images {
+    margin: 50px -5px;
+    padding-top: 100px;
+}
+
+.comparison-images {
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-top: 220px;
+}
+
+.section-title-page {
+    margin-bottom: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.in-the-box {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.tech-specs {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1600px) {
+    .main {
+        padding-top: 70px;
+    }
+
+    .wrapper-1600 {
+        padding: 0 40px 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .section {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .wrapper-1080 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .section {
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-1600 {
+        padding: 0 14px 0;
+        margin-bottom: 40px;
+    }
+
+    .section-title-page {
+        margin-bottom: 15px;
+    }
+
+    .products {
+        margin-bottom: 40px;
+    }
+
+    .flex-image-text:first-child {
+        margin-top: 80px;
+    }
+}

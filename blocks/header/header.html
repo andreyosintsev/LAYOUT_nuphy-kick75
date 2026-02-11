@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Block</title>
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body style="background-color: lime;">
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="logo header__logo">
+                <a class="logo__link" href="#" title="Клавиатуры NuPhy - главная страница">
+                    <img class="logo__image" 
+                        src="../logo/images/logo.webp" 
+                        alt="Логотип NuPhy">
+                </a>
+            </div>
+            <nav class="menu-main header__menu-main">
+                <ul class="menu-main__items">
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="keyboards.html" title="Клавиатуры NuPhy">
+                            Клавиатуры
+                        </a>
+                    </li>
+                    <li class="menu-main__item menu-main__item_dropdown">
+                        <a class="menu-main__link" title="Клавиатуры HE">
+                            Клавиатуры на магнитных свичах
+                        </a>
+                        <div class="menu-dropdown hidden">
+                            <ul class="menu-dropdown__items">
+                                <li class="menu-dropdown__item">
+                                    <a class="menu-dropdown__link" href="halo65-he.html" title="Клавиатура NuPhy Halo65 HE">
+                                        Клавиатура NuPhy Halo65 HE
+                                    </a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a class="menu-dropdown__link" href="air60-he.html" title="Клавиатура NuPhy Air60 HE">
+                                        Клавиатура NuPhy Air60 HE
+                                    </a>
+                                </li>
+                                <li class="menu-dropdown__item">
+                                    <a class="menu-dropdown__link" href="air75-he.html" title="Клавиатура NuPhy Air75 HE">
+                                        Клавиатура NuPhy Air75 HE
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="accessories.html" title="Аксессуары">
+                            Аксессуары
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="index.html#reviews" title="О нас пишут">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="index.html#contacts" title="Контакты">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-mobile-button">
+                <svg aria-hidden="true" 
+                    focusable="false" 
+                    role="presentation" 
+                    class="menu-mobile-button__icon" 
+                    viewBox="0 0 64 64">
+                    <path class="menu-mobile-button__icon-line1" d="M7 15h51">.</path>
+                    <path class="menu-mobile-button__icon-line2" d="M7 32h43">.</path>
+                    <path class="menu-mobile-button__icon-line3" d="M7 49h51">.</path>
+                </svg>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

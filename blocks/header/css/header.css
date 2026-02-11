@@ -1,0 +1,210 @@
+.header {
+    position: fixed;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    font-family: var(--text-family-main, sans-serif);
+
+    background-color: var(--background-color-menu, #FFFFFF);
+
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+
+    z-index: 500;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header__wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--wrapper-width, 1600px);
+    margin: 0 auto;
+}
+
+.header__logo {
+    justify-self: start;
+    display: flex;
+
+    width: 86px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.menu-main {
+    color: var(--text-color-menu, #3C3C3C);
+    font-family: var(--text-family-menu, sans-serif);
+    font-size: var(--text-size-menu, 16px);
+    font-weight: var(--text-weight-semibold, 600);
+}
+
+.menu-main__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    margin: 0;
+    padding: 1px 0;
+    width: 100%;
+
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.menu-main__item {
+    position: relative;
+}
+
+.menu-main__link {
+    display: inline-block;
+    padding: 14px clamp(5px, calc(5px + (15 * (100vw - 901px) / 699)), 20px);;
+
+    color: var(--text-color-menu, #3C3C3C);
+
+    text-decoration: none;
+
+    border-top: 2px solid var(--white, #FFFFFF);
+    border-bottom: 2px solid var(--white, #FFFFFF);
+
+    transition: background 0.3s;
+
+    cursor: pointer;
+}
+
+.menu-main__link:hover  {
+    border-bottom: 2px solid var(--black, #000000);
+}
+
+/* .menu-dropdown {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+
+    color: var(--text-color-menu, #3C3C3C);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 12px;
+    font-weight: var(--text-weight-bold, 600);
+    line-height: 18px;
+    text-transform: uppercase;
+
+    background-color: var(--white, #FFFFFF);
+
+    box-shadow: 0px 10px 12px 2px #0000001F;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+    transition: all 0.3s;
+
+    z-index: 100;
+} */
+
+/* .menu-dropdown__items {
+    margin: 0;
+    padding: 10px;
+
+    list-style: none;
+}
+
+.menu-dropdown__item {
+    padding: 3px 0;
+
+    white-space: nowrap;
+}
+
+.menu-dropdown__link {
+    color: var(--link-normal-color, #3C3C3C);
+
+    text-decoration: none;
+}
+
+.menu-dropdown__link:hover, .menu-dropdown__link:focus {
+    color: var(--link-normal-color_hover, #3C3C3C);
+
+    text-decoration: none;
+    text-shadow: 0 0 1px var(--link-normal-color_hover, #3C3C3C);
+}
+
+.menu-main__item_dropdown:hover .menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+} */
+
+.menu-mobile-button {
+    display: none;
+    justify-self: end;
+    width: 20px;
+    height: 20px;
+    margin-left: 17px;
+
+    justify-self: end;
+   
+    cursor: pointer;
+}
+
+.menu-mobile-button__icon {
+    fill: none;
+    stroke-width: 3px;
+    stroke: currentColor !important;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.menu-mobile-button__icon-line1,
+.menu-mobile-button__icon-line2,
+.menu-mobile-button__icon-line3 {
+    transform: none;
+    transform-origin: center;
+    transition: all .3s cubic-bezier(.18,.77,.58,1);
+}
+
+.menu-mobile-button_active .menu-mobile-button__icon-line1 {
+    transform: rotate(45deg);
+    transform-origin: 20% 30%;
+}
+
+.menu-mobile-button_active .menu-mobile-button__icon-line2 {
+    opacity: 0;
+}
+
+.menu-mobile-button_active .menu-mobile-button__icon-line3 {
+    transform: rotate(-45deg);
+    transform-origin: 15% 66%;
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 0 14px;
+    }
+
+    .header__logo {
+        width: 77px;
+        height: 21px;
+    }
+
+    .menu-main {
+        min-width: 0;
+        height: 52px;
+        opacity: 0;
+    }
+
+    .menu-main__item {
+        width: 0;
+    }
+
+    .menu-mobile-button {
+        display: block;
+        margin-left: 30px;
+    }
+}

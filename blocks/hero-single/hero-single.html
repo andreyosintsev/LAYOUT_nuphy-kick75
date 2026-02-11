@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Single Block</title>
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/common/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
+    <link rel="stylesheet" href="../rating/css/rating.css">
+    <link rel="stylesheet" href="../accordion/css/accordion.css">
+    <link rel="stylesheet" href="../benefits/css/benefits.css">
+    <link rel="stylesheet" href="../button/css/button.css">
+    <link rel="stylesheet" href="../form/css/form.css">
+    <link rel="stylesheet" href="../panel-single/css/panel-single.css">
+    <link rel="stylesheet" href="css/hero-single.css">
+</head>
+<body style="background-color: yellowgreen; padding: 10px;">
+    <div class="wrapper">
+        <div class="hero-single">
+            <div class="hero-single__gallery">
+                <div class="hero-single__gallery-images">
+                    <img class="hero-single__gallery-image"
+                        src="images/product/product-01.webp"
+                        title="NuPhy Halo65 HE"
+                        data-index="0">
+                    <img class="hero-single__gallery-image"
+                        src="images/product/product-02.webp"
+                        title="NuPhy Halo65 HE"
+                        data-index="1">
+                    <img class="hero-single__gallery-image"
+                        src="images/product/product-03.webp"
+                        title="NuPhy Halo65 HE"
+                        data-index="2">
+                    <img class="hero-single__gallery-image"
+                        src="images/product/product-04.webp"
+                        title="NuPhy Halo65 HE"
+                        data-index="3">
+                </div>
+            </div>
+            <div class="hero-single__images owl-carousel owl-theme">
+                <div class="hero-single__image">
+                    <img class="hero-single__img"
+                        src="images/product/product-01.webp"
+                        title="NuPhy Halo65 HE">
+                </div>
+                <div class="hero-single__image">
+                    <img class="hero-single__img"
+                        src="images/product/product-02.webp"
+                        title="NuPhy Halo65 HE">
+                </div>
+                <div class="hero-single__image">
+                    <img class="hero-single__img"
+                        src="images/product/product-03.webp"
+                        title="NuPhy Halo65 HE">
+                </div>
+                <div class="hero-single__image">
+                    <img class="hero-single__img"
+                        src="images/product/product-04.webp"
+                        title="NuPhy Halo65 HE">
+                </div>
+            </div>
+            <div class="panel-single hero-single__panel">
+                <div class="panel-single__description">
+                    <div class="panel-single__vendor">NuPhy&reg;</div>
+                    <h1 class="panel-single__title">NuPhy Halo65 HE</h1>
+                    <div class="panel-single__subtitle">Игровая клавиатура с магнитными переключателями</div>
+                    <div class="rating panel-single__rating">
+                        <div class="rating__stars">
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star rating__star_blank"></span>
+                        </div>
+                        <div class="rating__reviews">
+                            (120)
+                        </div>
+                    </div>
+                    <div class="panel-single__price">9000 р.</div>
+                </div>       
+                <form class="form panel__form">
+                    <legend class="form__legend">Переключатели</legend>
+                    <fieldset class="form__fieldset">                        
+                        <div class="form__radio-button">
+                            <input class="form__radio" 
+                                    type="radio" 
+                                    id="form__radio_coral" 
+                                    name="switch"
+                                    value="Magnetic Coral"
+                                    checked>
+                            <label class="form__label" for="form__radio_coral">Magnetic Coral</label>
+                        </div>
+                        <div class="form__radio-button">
+                            <input class="form__radio" 
+                                    type="radio" 
+                                    id="form__radio_jade" 
+                                    name="switch"
+                                    value="Magnetic Jade Pro">
+                            <label class="form__label" for="form__radio_jade">Magnetic Jade Pro</label>
+                        </div>
+                    </fieldset>
+                    <ul class="benefits form__benefits">
+                        <li class="benefits__benefit">
+                            <img class="benefits__image benefits__image_warranty"
+                                src="../benefits/images/warranty.svg" 
+                                alt="Гарантия">
+                            <div class="benefits__text">
+                                Гарантия 1 год
+                            </div>
+                        </li>
+                        <li class="benefits__benefit">
+                            <img class="benefits__image benefits__image_delivery"
+                                src="../benefits/images/earth.svg" 
+                                alt="Доставка">
+                            <div class="benefits__text">
+                                Доставка по всей России
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button_buy" type="button">КУПИТЬ</button>
+                </form>
+                <div class="panel-single__features">
+                    <div class="panel-single__features-header">
+                        Особенности:
+                    </div>
+                    <ul class="panel-single__features-list">
+                        <li class="panel-single__feature">Частота опроса 8 кГц</li>
+                        <li class="panel-single__feature">Короткая задержка 0,3 мс</li>
+                        <li class="panel-single__feature">RT-чувствительность 0,02 мм</li>
+                        <li class="panel-single__feature">Диапазон срабатывания 0,1 - 4,0 мм</li>
+                        <li class="panel-single__feature">Web-приложение NuPhyIO (мультисистемная совместимость)</li>
+                        <li class="panel-single__feature">Подключение: только проводное</li>
+                    </ul>
+                </div>
+                <div class="accordion panel-single__details">
+                    <div class="accordion__content">
+                        <div class="accordion__item">
+                            <div class="accordion__item-title">
+                                СВЕДЕНИЯ О ДОСТАВКЕ
+                            </div>
+                            <div class="accordion__item-content">
+                                Доставка товаров осуществляется по всей территории России.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__item-title">
+                                ГАРАНТИЙНЫЕ ОБЯЗАТЕЛЬСТВА
+                            </div>
+                            <div class="accordion__item-content">
+                                Гарантийный срок 1 год с даты продажи распространяется на все клавиатуры NuPhy. При возникновении проблем с качеством товара обращайтесь к продавцу.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/util/jquery-3.7.1.min.js"></script>
+    <script src="../../scripts/util/owl.carousel.min.js"></script>
+    <script src="../../scripts/accordion.js"></script>
+    <script src="../../scripts/carousels.js"></script>
+</body>
+</html>
