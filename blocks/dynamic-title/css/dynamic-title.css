@@ -1,0 +1,39 @@
+.dynamic-title {
+    margin: 0;
+    padding: 0;
+
+    color: #A8A0A0;
+    font-family: var(--text-family-menu, sans-serif);
+    font-size: 36px;
+    font-weight: var(--text-weight-main, 400);
+
+    line-height: 54px;
+
+    text-align: center;
+}
+
+.dynamic-title_bold {
+    font-size: 22px;
+    font-weight: var(--text-weight-bold, 700);
+}
+
+.dynamic-title_small {
+    font-size: 18px;
+    font-weight: var(--text-weight-light, 300);
+}
+
+@media screen and (max-width: 768px) {
+    .dynamic-title {
+        font-size: 29px;
+
+        line-height: 43px;
+    }
+
+    .dynamic-title_bold {
+        font-size: 18px;
+    }
+
+    .dynamic-title_small {
+        font-size: 14px;
+    }
+}
