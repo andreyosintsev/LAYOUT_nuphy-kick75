@@ -26,6 +26,14 @@
     line-height: 27px;
 }
 
+.p-text_small {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 15px !important;
+    line-height: 21px;
+}
+
 .p-superscript {
     margin-bottom: 20px;
 
@@ -54,7 +62,7 @@
 }
 
 .p-link:hover {
-    color: var(--link-normal-color_hover, #FFA366); 
+    color: var(--link-normal-color_hover, #FFA366);
 }
 
 body.page-dark {

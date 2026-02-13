@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+.section-title_left {
+    text-align: left;
+}
+
 @media (max-width: 990px) {
     .section-title {
         padding-left: 20px;

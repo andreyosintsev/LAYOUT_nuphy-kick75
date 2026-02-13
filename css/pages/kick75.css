@@ -87,12 +87,28 @@ body {
     margin-bottom: 30px;
 }
 
+.dynamic-title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
 .section {
     margin-top: 220px;
 }
 
-.section-title-page {
+.section-title {
+    margin-top: 80px;
     margin-bottom: 20px;
+}
+
+.p-text {
+    max-width: 100%;
+
+    font-size: 20px;
+}
+
+.mt-80 {
+    margin-top: 80px !important;
 }
 
 .mt-40 {
