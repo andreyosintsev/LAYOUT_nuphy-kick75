@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Block</title>
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
+    <link rel="stylesheet" href="css/audio.css">
+</head>
+
+<body style="background-color: lime;">
+    <div style="width: 275px">
+        <div class="audio">
+            <div class="audio__container" data-audio-id="1">
+                <audio
+                    class="audio__audio"
+                    src="audio/audio-01.mp3"
+                    id="audio-1">
+                </audio>
+                <div class="audio__tips">Воспроизвести</div>
+                <div class="audio__header"><span>Red nano</span>
+                    <img class="audio__icon" src="images/icon.svg" src="Audio">
+                </div>
+                <span class="audio__subheader">45gf Linear</span>
+                <div class="audio__keycap-image">
+                    <img class="audio__keycap-img"
+                        src="images/audio-01.webp"
+                        alt="Изображение кейкапа">
+                </div>
+                <div class="audio__progress-bar">
+                    <div class="audio__progress-bar-fill" style="width: 63.6835%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/audio.js"></script>
+</body>
+</html>
