@@ -65,6 +65,17 @@ body {
     text-align: left;
 }
 
+.wrapper-1200 {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto 60px;
+
+    color: var(--text-color-main, #000000);
+
+    text-align: left;
+}
+
 .wrapper-1080 {
     width: 100%;
     max-width: var(--content-width, 1080px);
@@ -143,6 +154,15 @@ body {
     text-align: right;
 }
 
+.audio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
 @media (max-width: 1600px) {
     .main {
         padding-top: 70px;
@@ -209,5 +229,9 @@ body {
 
     .flex-image-text:first-child {
         margin-top: 80px;
+    }
+
+    .audio-container {
+        grid-template-columns: 1fr;
     }
 }
