@@ -116,6 +116,17 @@ body {
     margin-bottom: 100px;
 }
 
+.soft-matters .p-text {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: #DCE2E1;
+    font-size: 16px;
+
+    text-align: right;
+}
+
 @media (max-width: 1600px) {
     .main {
         padding-top: 70px;
