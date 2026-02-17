@@ -26,6 +26,16 @@
     line-height: 27px;
 }
 
+.p-text_centered {
+    text-align: center;
+}
+
+.p-text_large {
+    margin: 10px 0;
+
+    font-size: 24px;
+}
+
 .p-text_small {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -43,6 +53,10 @@
     font-weight: var(--text-weight-semibold, 600);
 
     text-transform: uppercase;
+}
+
+.p-superscript_small {
+    text-transform: none;
 }
 
 .p-strong {
