@@ -138,6 +138,10 @@ body {
     margin-top: 40px !important;
 }
 
+.mt-30 {
+    margin-top: 30px !important;
+}
+
 .mb-40 {
     margin-bottom: 40px !important;
 }
@@ -198,6 +202,21 @@ body {
     height: auto;
 }
 
+.tech-table {
+    margin-top: 5px;
+}
+
+.accordion__item-content {
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.accordion__item-title {
+    font-family: var(--text-family-main, sans-serif);
+
+    text-transform: none;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
@@ -205,6 +224,10 @@ body {
 
     .wrapper-1600 {
         padding: 0 40px;
+    }
+
+    .wrapper-1600_no-padding {
+        padding: 0;
     }
 }
 
@@ -229,8 +252,8 @@ body {
 
 @media screen and (max-width: 1080px) {
     .wrapper-1080 {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -245,6 +268,12 @@ body {
         font-weight: var(--text-weight-bold, 700);
 
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .accordion__item-content {
+        padding: 0 18px;
     }
 }
 
@@ -274,7 +303,11 @@ body {
     }
 
     .wrapper-880 {
-        padding: 0 70px;
+        padding: 0 50px;
+    }
+
+    .audio-container {
+        grid-template-columns: 1fr;
     }
 
     .switch-cards {
@@ -282,6 +315,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         gap: 10px 60px;
+    }
+
+    .accordion__item-content {
+        padding: 0 14px;
     }
 }
 
