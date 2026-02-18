@@ -186,6 +186,18 @@ body {
     font-weight: var(--text-weight-bold, 700);
 }
 
+.switch-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 20px;
+}
+
+.switch-cards__card {
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
@@ -263,5 +275,18 @@ body {
 
     .wrapper-880 {
         padding: 0 70px;
+    }
+
+    .switch-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 10px 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .switch-cards {
+        gap: 10px 30px;
     }
 }
