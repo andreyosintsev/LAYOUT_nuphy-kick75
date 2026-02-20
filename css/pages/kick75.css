@@ -320,6 +320,14 @@ body {
     .accordion__item-content {
         padding: 0 14px;
     }
+
+    .in-the-box__content {
+        display: block;
+    }
+
+    .in-the-box__col {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {

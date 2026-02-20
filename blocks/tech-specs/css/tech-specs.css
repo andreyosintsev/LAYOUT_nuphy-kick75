@@ -40,7 +40,7 @@
 .tech-specs__specs {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
 }
@@ -90,13 +90,13 @@
 @media (max-width: 990px) {
     .tech-specs {
         padding: 40px 40px 20px;
-    }    
+    }
 }
 
 @media (max-width: 767px) {
     .tech-specs {
         padding: 40px 30px 20px;
-    }    
+    }
 
     .tech-specs__specs {
         display: block;
